@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#eventList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.event-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.event-card p {
+    margin: 8px 0;
+}
+
+.event-card button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e3a8a;
+    color: white;
+    cursor: pointer;
+}
+
+.event-card button:hover {
+    background-color: #172554;
+}
+
+/* Booking Page */
+
+#eventDetails {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#eventDetails h3 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+#eventDetails p {
+    margin: 8px 0;
+}
+
+
+/* Seat Legend */
+
+.seat-legend {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.seat-legend div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.legend-seat {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.legend-seat.gold {
+    background-color: #facc15;
+}
+
+.legend-seat.silver {
+    background-color: #cbd5e1;
+}
+
+.legend-seat.selected {
+    background-color: #2563eb;
+}
+
+
+/* Screen */
+
+.screen {
+    width: 70%;
+    margin: 25px auto;
+    padding: 12px;
+    text-align: center;
+    background-color: #1e3a8a;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+/* Seat Section */
+
+.seat-section-title {
+    text-align: center;
+    color: #1e3a8a;
+    margin: 25px 0 15px;
+}
+
+
+/* Seats */
+
+.seat-container {
+    text-align: center;
+    margin-bottom: 25px;
+    overflow-x: auto;
+}
+
+.seat-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.seat {
+    width: 55px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.seat.gold {
+    background-color: #facc15;
+    color: #713f12;
+}
+
+.seat.gold:hover {
+    background-color: #eab308;
+}
+
+.seat.silver {
+    background-color: #cbd5e1;
+    color: #334155;
+}
+
+.seat.silver:hover {
+    background-color: #94a3b8;
+}
+
+.seat.selected {
+    background-color: #2563eb;
+    color: white;
+}
+
+
+/* Booking Details */
+
+.seat-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 25px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seat-info p {
+    margin: 10px 0;
+}
+
+
+/* Payment */
+
+.payment-methods {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.payment-methods label {
+    display: block;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+.payment-methods input {
+    margin-right: 10px;
+}
+
+
+/* Booking Button */
+
+#bookingForm button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1e3a8a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#bookingForm button:hover {
+    background-color: #172554;
+}
+
+
+/* Booking Message */
+
+#bookingMessage {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}

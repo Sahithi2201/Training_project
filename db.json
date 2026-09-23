@@ -1,0 +1,124 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "name": "Avengers: Endgame",
+      "location": "PVR Cinemas, Guntur",
+      "date": "2026-10-10",
+      "time": "06:30 PM",
+      "goldPrice": 250,
+      "silverPrice": 150,
+      "availableSeats": 30
+    },
+    {
+      "name": "circus show",
+      "location": "nijampet",
+      "date": "2026-09-27",
+      "time": "09:30",
+      "goldPrice": 400,
+      "silverPrice": 340,
+      "availableSeats": 74,
+      "id": "kxJErcN2PiI"
+    },
+    {
+      "name": "magic show",
+      "location": "hyderabad",
+      "date": "2026-09-27",
+      "time": "06:40",
+      "goldPrice": 500,
+      "silverPrice": 400,
+      "availableSeats": 76,
+      "id": "6OOqZvriRNI"
+    },
+    {
+      "name": "circus show",
+      "location": "nijampet",
+      "date": "2026-09-25",
+      "time": "10:30",
+      "goldPrice": 400,
+      "silverPrice": 340,
+      "availableSeats": 48,
+      "id": "NzQmQuzxKeo"
+    }
+  ],
+  "users": [
+    {
+      "id": "user1",
+      "name": "Sahithi",
+      "email": "sahithi@example.com"
+    }
+  ],
+  "bookings": [
+    {
+      "userId": "user1",
+      "eventId": "kxJErcN2PiI",
+      "selectedSeats": [
+        "G2",
+        "S12"
+      ],
+      "numberOfSeats": 2,
+      "totalAmount": 740,
+      "paymentMethod": "Cash on Counter",
+      "bookingDate": "2026-09-23T02:04:14.346Z",
+      "status": "Confirmed",
+      "id": "yhziG_G0VmQ"
+    },
+    {
+      "userId": "user1",
+      "eventId": "1",
+      "selectedSeats": [
+        "G12",
+        "S2"
+      ],
+      "numberOfSeats": 2,
+      "totalAmount": 400,
+      "paymentMethod": "Net Banking",
+      "bookingDate": "2026-09-23T02:06:01.536Z",
+      "status": "Confirmed",
+      "id": "q4RLYXT58cw"
+    },
+    {
+      "userId": "user1",
+      "eventId": "kxJErcN2PiI",
+      "selectedSeats": [
+        "G12",
+        "S7"
+      ],
+      "numberOfSeats": 2,
+      "totalAmount": 740,
+      "paymentMethod": "Cash on Counter",
+      "bookingDate": "2026-09-23T02:42:34.467Z",
+      "status": "Cancelled",
+      "id": "OiGCWeOQgJw"
+    },
+    {
+      "userId": "user1",
+      "eventId": "1",
+      "selectedSeats": [
+        "G13",
+        "S8"
+      ],
+      "numberOfSeats": 2,
+      "totalAmount": 400,
+      "paymentMethod": "Cash on Counter",
+      "bookingDate": "2026-09-23T02:46:44.364Z",
+      "status": "Cancelled",
+      "id": "BgrdEI5mM9Y"
+    },
+    {
+      "userId": "user1",
+      "eventId": "NzQmQuzxKeo",
+      "selectedSeats": [
+        "G8",
+        "S3"
+      ],
+      "numberOfSeats": 2,
+      "totalAmount": 740,
+      "paymentMethod": "Cash on Counter",
+      "bookingDate": "2026-09-23T06:16:55.630Z",
+      "status": "Confirmed",
+      "id": "Z0aU8fSLxaw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Book Tickets - Class Project</title>
+
+    <link rel="stylesheet"
+        href="../css/style.css">
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <h1>Class Project</h1>
+
+        <nav>
+
+            <a href="index.html">
+                Events
+            </a>
+
+            <a href="add-event.html">
+                Add Event
+            </a>
+
+            <a href="history.html">
+                Booking History
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <h2>Book Tickets</h2>
+
+
+        <div id="eventDetails">
+
+            <h3 id="eventName">
+                Loading...
+            </h3>
+
+            <p>
+                <strong>Location:</strong>
+                <span id="eventLocation"></span>
+            </p>
+
+            <p>
+                <strong>Date:</strong>
+                <span id="eventDate"></span>
+            </p>
+
+            <p>
+                <strong>Time:</strong>
+                <span id="eventTime"></span>
+            </p>
+
+            <p>
+                <strong>Ticket Prices:</strong>
+                <span id="eventPrice"></span>
+            </p>
+
+            <p>
+                <strong>Available Seats:</strong>
+                <span id="availableSeats"></span>
+            </p>
+
+        </div>
+
+
+        <h3 class="seat-section-title">
+            Select Your Seats
+        </h3>
+
+
+        <div class="seat-legend">
+
+            <div>
+                <span class="legend-seat gold"></span>
+                Gold
+            </div>
+
+            <div>
+                <span class="legend-seat silver"></span>
+                Silver
+            </div>
+
+            <div>
+                <span class="legend-seat selected"></span>
+                Selected
+            </div>
+
+        </div>
+
+
+        <div class="screen">
+            SCREEN
+        </div>
+
+
+        <h3 class="seat-section-title">
+            Gold Seats
+        </h3>
+
+
+        <div class="seat-container">
+
+            <div class="seat-row">
+
+                <button class="seat gold"
+                    data-seat="G1">
+                    G1
+                </button>
+
+                <button class="seat gold"
+                    data-seat="G2">
+                    G2
+                </button>
+
+                <button class="seat gold"
+                    data-seat="G3">
+                    G3
+                </button>
+
+                <button class="seat gold"
+                    data-seat="G4">
+                    G4
+                </button>
+
+                <button class="seat gold"
+                    data-seat="G5">
+                    G5
+                </button>
+
+            </div>
+
+
+            <div class="seat-row">
+
+                <button class="seat gold"
+                    data-seat="G6">
+                    G6
+                </button>
+
+                <button class="seat gold"
+                    data-seat="G7">
+                    G7
+                </button>
+
+                <button class="seat gold"
+                    data-seat="G8">
+                    G8
+                </button>
+
+                <button class="seat gold"
+                    data-seat="G9">
+                    G9
+                </button>
+
+                <button class="seat gold"
+                    data-seat="G10">
+                    G10
+                </button>
+
+            </div>
+
+
+            <div class="seat-row">
+
+                <button class="seat gold"
+                    data-seat="G11">
+                    G11
+                </button>
+
+                <button class="seat gold"
+                    data-seat="G12">
+                    G12
+                </button>
+
+                <button class="seat gold"
+                    data-seat="G13">
+                    G13
+                </button>
+
+                <button class="seat gold"
+                    data-seat="G14">
+                    G14
+                </button>
+
+                <button class="seat gold"
+                    data-seat="G15">
+                    G15
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <h3 class="seat-section-title">
+            Silver Seats
+        </h3>
+
+
+        <div class="seat-container">
+
+            <div class="seat-row">
+
+                <button class="seat silver"
+                    data-seat="S1">
+                    S1
+                </button>
+
+                <button class="seat silver"
+                    data-seat="S2">
+                    S2
+                </button>
+
+                <button class="seat silver"
+                    data-seat="S3">
+                    S3
+                </button>
+
+                <button class="seat silver"
+                    data-seat="S4">
+                    S4
+                </button>
+
+                <button class="seat silver"
+                    data-seat="S5">
+                    S5
+                </button>
+
+            </div>
+
+
+            <div class="seat-row">
+
+                <button class="seat silver"
+                    data-seat="S6">
+                    S6
+                </button>
+
+                <button class="seat silver"
+                    data-seat="S7">
+                    S7
+                </button>
+
+                <button class="seat silver"
+                    data-seat="S8">
+                    S8
+                </button>
+
+                <button class="seat silver"
+                    data-seat="S9">
+                    S9
+                </button>
+
+                <button class="seat silver"
+                    data-seat="S10">
+                    S10
+                </button>
+
+            </div>
+
+
+            <div class="seat-row">
+
+                <button class="seat silver"
+                    data-seat="S11">
+                    S11
+                </button>
+
+                <button class="seat silver"
+                    data-seat="S12">
+                    S12
+                </button>
+
+                <button class="seat silver"
+                    data-seat="S13">
+                    S13
+                </button>
+
+                <button class="seat silver"
+                    data-seat="S14">
+                    S14
+                </button>
+
+                <button class="seat silver"
+                    data-seat="S15">
+                    S15
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="seat-info">
+
+            <p>
+                <strong>Selected Seats:</strong>
+                <span id="selectedSeats">
+                    None
+                </span>
+            </p>
+
+            <p>
+                <strong>Number of Seats:</strong>
+                <span id="numberOfSeats">
+                    0
+                </span>
+            </p>
+
+            <p>
+                <strong>Total Amount:</strong>
+                <span id="totalAmount">
+                    ₹0
+                </span>
+            </p>
+
+        </div>
+
+
+        <form id="bookingForm">
+
+            <h3 class="seat-section-title">
+                Payment Method
+            </h3>
+
+
+            <div class="payment-methods">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="paymentMethod"
+                        value="UPI"
+                    >
+                    UPI
+                </label>
+
+
+                <label>
+                    <input
+                        type="radio"
+                        name="paymentMethod"
+                        value="Credit/Debit Card"
+                    >
+                    Credit/Debit Card
+                </label>
+
+
+                <label>
+                    <input
+                        type="radio"
+                        name="paymentMethod"
+                        value="Net Banking"
+                    >
+                    Net Banking
+                </label>
+
+
+                <label>
+                    <input
+                        type="radio"
+                        name="paymentMethod"
+                        value="Cash on Counter"
+                    >
+                    Cash on Counter
+                </label>
+
+            </div>
+
+
+            <button type="submit">
+                Book Selected Seats
+            </button>
+
+        </form>
+
+
+        <div id="bookingMessage"></div>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="../js/service/apiConfig.js"></script>
+
+    <script src="../js/service/eventService.js"></script>
+
+    <script src="../js/service/bookingService.js"></script>
+
+    <script src="../js/booking.js"></script>
+
+</body>
+
+</html>
