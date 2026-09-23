@@ -270,3 +270,62 @@ main h2 {
     margin-top: 20px;
     text-align: center;
 }
+
+/* Add Event Page */
+
+#eventForm {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#eventForm label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+#eventForm input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#eventForm input:focus {
+    outline: none;
+    border-color: #1e3a8a;
+}
+
+#eventForm button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1e3a8a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#eventForm button:hover {
+    background-color: #172554;
+}
+
+#eventMessage {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+}
